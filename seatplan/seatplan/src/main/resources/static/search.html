@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SeatPlan - Search Student</title>
+
+    <link
+            rel="stylesheet"
+            href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                         HEADER
+===================================================== -->
+
+<header>
+
+    <div class="logo">
+        SeatPlan
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="halls.html">
+            Halls
+        </a>
+
+        <a href="students.html">
+            Students
+        </a>
+
+        <a href="sessions.html">
+            Exam Sessions
+        </a>
+
+        <a href="seating.html">
+            Seating
+        </a>
+
+        <a href="search.html">
+            Search Student
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+                       MAIN CONTENT
+===================================================== -->
+
+<main class="page-container">
+
+
+    <h1>
+        Search Student
+    </h1>
+
+
+    <p class="page-description">
+
+        Search for a student's examination
+        hall and seat using their register number.
+
+    </p>
+
+
+
+    <!-- =================================================
+                    SEARCH FORM
+    ================================================== -->
+
+    <section class="form-card">
+
+
+        <h2>
+            Find Student Seat
+        </h2>
+
+
+        <div class="form-row">
+
+
+            <div class="form-group">
+
+                <label for="registerNumber">
+                    Register Number
+                </label>
+
+                <input
+                        type="text"
+                        id="registerNumber"
+                        placeholder="Example: 24ECE001"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <button
+                type="button"
+                class="button"
+                onclick="searchStudent()"
+        >
+
+            Search Student
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                    SEARCH RESULT
+    ================================================== -->
+
+    <section
+            class="table-card"
+            id="resultSection"
+            style="display: none;"
+    >
+
+
+        <h2>
+            Student Seating Details
+        </h2>
+
+
+        <div id="studentResult">
+
+            <!--
+                Student seating details will
+                appear here.
+            -->
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+                         FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        SeatPlan © 2026
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+                     JAVASCRIPT
+===================================================== -->
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>

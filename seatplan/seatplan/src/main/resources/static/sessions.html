@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SeatPlan - Exam Sessions</title>
+
+    <link
+            rel="stylesheet"
+            href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                         HEADER
+===================================================== -->
+
+<header>
+
+    <div class="logo">
+        SeatPlan
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="halls.html">
+            Halls
+        </a>
+
+        <a href="students.html">
+            Students
+        </a>
+
+        <a href="sessions.html">
+            Exam Sessions
+        </a>
+
+        <a href="seating.html">
+            Seating
+        </a>
+
+        <a href="search.html">
+            Search Student
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+                       MAIN CONTENT
+===================================================== -->
+
+<main class="page-container">
+
+
+    <h1>
+        Exam Sessions
+    </h1>
+
+
+    <p class="page-description">
+
+        Create and manage examination sessions
+        for generating seating arrangements.
+
+    </p>
+
+
+
+    <!-- =================================================
+                    ADD EXAM SESSION
+    ================================================== -->
+
+    <section class="form-card">
+
+
+        <h2>
+            Add Exam Session
+        </h2>
+
+
+        <div class="form-row">
+
+
+            <!-- Exam Name -->
+
+            <div class="form-group">
+
+                <label for="examName">
+                    Exam Name
+                </label>
+
+                <input
+                        type="text"
+                        id="examName"
+                        placeholder="Example: Internal Assessment 1"
+                >
+
+            </div>
+
+
+
+            <!-- Subject -->
+
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                        type="text"
+                        id="subject"
+                        placeholder="Example: Java Programming"
+                >
+
+            </div>
+
+
+
+            <!-- Exam Date -->
+
+            <div class="form-group">
+
+                <label for="examDate">
+                    Exam Date
+                </label>
+
+                <input
+                        type="date"
+                        id="examDate"
+                >
+
+            </div>
+
+
+        </div>
+
+
+
+        <button
+                type="button"
+                class="button"
+                onclick="addExamSession()"
+        >
+
+            Add Exam Session
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                    EXAM SESSION LIST
+    ================================================== -->
+
+    <section class="table-card">
+
+
+        <div class="section-header">
+
+            <h2>
+                Exam Session List
+            </h2>
+
+        </div>
+
+
+
+        <table>
+
+
+            <thead>
+
+            <tr>
+
+                <th>
+                    ID
+                </th>
+
+                <th>
+                    Exam Name
+                </th>
+
+                <th>
+                    Subject
+                </th>
+
+                <th>
+                    Exam Date
+                </th>
+
+                <th>
+                    Action
+                </th>
+
+            </tr>
+
+            </thead>
+
+
+
+            <tbody id="sessionTableBody">
+
+            <!--
+                Exam session records will be
+                loaded here using JavaScript.
+            -->
+
+            </tbody>
+
+
+        </table>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+                         FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        SeatPlan © 2026
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+                     JAVASCRIPT
+===================================================== -->
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>
